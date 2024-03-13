@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="../src/images/logo.png" />
+      <!-- <h1>Todo List</h1> -->
+    </header>
+    <div class="main">
+      <div class="left">
+        <h2>Projects</h2>
+        <div class="itemsP"></div>
+        <div class="wrapper">
+          <button class="addP">Add Project</button>
+        </div>
+      </div>
+      <div class="right">
+        <div class="inner">
+          <div class="top"></div>
+          <div class="add"></div>
+          <div class="todos"></div>
+        </div>
+      </div>
+      <div class="info hidden">
+        <div class="content">
+          <button class="cross" title="Cancel">x</button>
+          <div class="name"></div>
+          <div class="detail"></div>
+          <div class="priority"></div>
+          <div class="dDate"></div>
+        </div>
+      </div>
+      <div class="addTask hidden">
+        <div class="wrap">
+          <form>
+            <label
+              >Title:
+              <input type="text" class="titA" />
+            </label>
+            <label
+              >Description:
+              <input type="text" class="desA" />
+            </label>
+            <label>Due Date: <input type="date" class="dueDate" /></label>
+            <label class>
+              Priority:
+              <div class="btnA">
+                <label class="low"
+                  ><input
+                    class="radioBtn1"
+                    type="radio"
+                    name="priority"
+                    value="Low"
+                  />Low</label
+                >
+                <label class="med"
+                  ><input
+                    class="radioBtn2"
+                    type="radio"
+                    name="priority"
+                    value="Medium"
+                  />Medium</label
+                >
+                <label class="high"
+                  ><input
+                    class="radioBtn3"
+                    type="radio"
+                    name="priority"
+                    value="High"
+                  />High</label
+                >
+              </div>
+            </label>
+            <div class="taskBtn">
+              <div class="submitBtn"></div>
+              <div><button class="cancelTask">Cancel</button></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
