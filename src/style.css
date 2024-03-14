@@ -387,6 +387,8 @@ label {
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
+  overflow: scroll;
+  overflow-x: hidden;
 }
 
 /* Project Name in Tasks Header */
@@ -434,4 +436,22 @@ label {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #c8b7a6;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(112, 112, 112, 0.388);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #3e3e3e75;
 }

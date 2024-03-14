@@ -1,4 +1,4 @@
-import { todoObj } from "./index.js";
+import { todoObj } from "./app.js";
 import { projects, createEl } from "./DOM";
 import { saveToStorage } from "./storage.js";
 import { setPriority, getPriority } from "./addPriority.js";
